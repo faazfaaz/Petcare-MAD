@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/asdfgh"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewSignup"
+        android:layout_width="360dp"
+        android:layout_height="819dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pet Parade"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <EditText
+                android:id="@+id/SignUpUsername"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="20px"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="User Name"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/SignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="20px"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/SignUpEmail"
+                android:layout_width="679dp"
+                android:layout_height="81dp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="20px"
+                android:ems="10"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/SignUpContact"
+                android:layout_width="679dp"
+                android:layout_height="81dp"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="20px"
+                android:ems="10"
+                android:hint="Contact"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/SignUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
